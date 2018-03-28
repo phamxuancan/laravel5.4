@@ -324,3 +324,388 @@ Stack trace:
 #12 C:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(189): Illuminate\Foundation\Http\Kernel->terminateMiddleware(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
 #13 C:\xampp\htdocs\laravel\public\index.php(60): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
 #14 {main}  
+[2018-03-27 14:39:35] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "make:migrate" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:command
+    make:controller
+    make:event
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:policy
+    make:provider
+    make:request
+    make:seeder
+    make:test in C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('make:migrate')
+#1 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2018-03-27 14:39:46] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "make:migrate" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:command
+    make:controller
+    make:event
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:policy
+    make:provider
+    make:request
+    make:seeder
+    make:test in C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('make:migrate')
+#1 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2018-03-27 14:41:37] local.ERROR: Symfony\Component\Console\Exception\RuntimeException: The "-M" option does not exist. in C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Input\ArgvInput.php:205
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Input\ArgvInput.php(108): Symfony\Component\Console\Input\ArgvInput->addShortOption('M', NULL)
+#1 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Input\ArgvInput.php(84): Symfony\Component\Console\Input\ArgvInput->parseShortOption('-M')
+#2 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Input\Input.php(55): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(210): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#5 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\ModelMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
+[2018-03-27 14:47:59] local.ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:449
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(449): PDOStatement->execute()
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(640): Illuminate\Database\Connection->Illuminate\Database\{closure}('alter table `us...', Array)
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('alter table `us...', Array, Object(Closure))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('alter table `us...')
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('users', Object(Closure))
+#8 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_000000_create_users_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreateUsersTable->up()
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#13 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#15 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#19 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#22 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `users` add unique `users_username_unique`(`username`)) in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('alter table `us...', Array, Object(Closure))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('alter table `us...')
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('users', Object(Closure))
+#6 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_000000_create_users_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreateUsersTable->up()
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#19 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 {main}  
+[2018-03-27 14:48:31] local.ERROR: PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:449
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(449): PDOStatement->execute()
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(640): Illuminate\Database\Connection->Illuminate\Database\{closure}('create table `u...', Array)
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('create table `u...', Array, Object(Closure))
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('create table `u...', Array, Object(Closure))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('create table `u...')
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('users', Object(Closure))
+#8 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_000000_create_users_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreateUsersTable->up()
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#13 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#15 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#19 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#22 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` int unsigned not null auto_increment primary key, `username` varchar(255) not null, `email` varchar(255) not null, `password` varchar(255) not null, `level` tinyint not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate utf8mb4_unicode_ci) in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('create table `u...', Array, Object(Closure))
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('create table `u...', Array, Object(Closure))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('create table `u...')
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('users', Object(Closure))
+#6 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_000000_create_users_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreateUsersTable->up()
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#19 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 {main}  
+[2018-03-27 14:48:53] local.ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:449
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(449): PDOStatement->execute()
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(640): Illuminate\Database\Connection->Illuminate\Database\{closure}('alter table `us...', Array)
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('alter table `us...', Array, Object(Closure))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('alter table `us...')
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('users', Object(Closure))
+#8 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_000000_create_users_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreateUsersTable->up()
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#13 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#15 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#19 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#22 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `users` add unique `users_username_unique`(`username`)) in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('alter table `us...', Array, Object(Closure))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('alter table `us...')
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('users', Object(Closure))
+#6 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_000000_create_users_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreateUsersTable->up()
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#19 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 {main}  
+[2018-03-27 14:51:10] local.ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:449
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(449): PDOStatement->execute()
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(640): Illuminate\Database\Connection->Illuminate\Database\{closure}('alter table `pa...', Array)
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('alter table `pa...', Array, Object(Closure))
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('alter table `pa...', Array, Object(Closure))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('alter table `pa...')
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('password_resets', Object(Closure))
+#8 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_100000_create_password_resets_table.php(20): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreatePasswordResetsTable->up()
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreatePasswordResetsTable), 'up')
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#13 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#15 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#19 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#22 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `password_resets` add index `password_resets_email_index`(`email`)) in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('alter table `pa...', Array, Object(Closure))
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('alter table `pa...', Array, Object(Closure))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('alter table `pa...')
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('password_resets', Object(Closure))
+#6 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_100000_create_password_resets_table.php(20): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreatePasswordResetsTable->up()
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreatePasswordResetsTable), 'up')
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 1, false)
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#19 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 {main}  
+[2018-03-27 14:53:41] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'App\Providers\Schema' not found in C:\xampp\htdocs\laravel5.4\app\Providers\AppServiceProvider.php:15
+Stack trace:
+#0 [internal function]: App\Providers\AppServiceProvider->boot()
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(788): Illuminate\Container\Container->call(Array)
+#6 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(771): Illuminate\Foundation\Application->bootProvider(Object(App\Providers\AppServiceProvider))
+#7 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}(Object(App\Providers\AppServiceProvider), 14)
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(772): array_walk(Array, Object(Closure))
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(208): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(267): Illuminate\Foundation\Application->bootstrapWith(Array)
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(114): Illuminate\Foundation\Console\Kernel->bootstrap()
+#13 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2018-03-27 14:54:14] local.ERROR: PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'password_resets' already exists in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:449
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(449): PDOStatement->execute()
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(640): Illuminate\Database\Connection->Illuminate\Database\{closure}('create table `p...', Array)
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('create table `p...', Array, Object(Closure))
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('create table `p...', Array, Object(Closure))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('create table `p...')
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('password_resets', Object(Closure))
+#8 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_100000_create_password_resets_table.php(20): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreatePasswordResetsTable->up()
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreatePasswordResetsTable), 'up')
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 2, false)
+#13 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#15 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#19 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#22 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'password_resets' already exists (SQL: create table `password_resets` (`email` varchar(191) not null, `token` varchar(191) not null, `created_at` timestamp null) default character set utf8mb4 collate utf8mb4_unicode_ci) in C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(607): Illuminate\Database\Connection->runQueryCallback('create table `p...', Array, Object(Closure))
+#1 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Connection.php(450): Illuminate\Database\Connection->run('create table `p...', Array, Object(Closure))
+#2 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(86): Illuminate\Database\Connection->statement('create table `p...')
+#3 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(239): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(164): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Database\Schema\Builder->create('password_resets', Object(Closure))
+#6 C:\xampp\htdocs\laravel5.4\database\migrations\2014_10_12_100000_create_password_resets_table.php(20): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#7 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(359): CreatePasswordResetsTable->up()
+#8 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(365): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#9 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(177): Illuminate\Database\Migrations\Migrator->runMigration(Object(CreatePasswordResetsTable), 'up')
+#10 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(146): Illuminate\Database\Migrations\Migrator->runUp('C:\\xampp\\htdocs...', 2, false)
+#11 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->runPending(Array, Array)
+#12 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(69): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#14 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#19 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Command\Command.php(252): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#20 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#21 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(946): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 C:\xampp\htdocs\laravel5.4\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 C:\xampp\htdocs\laravel5.4\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\laravel5.4\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 {main}  
